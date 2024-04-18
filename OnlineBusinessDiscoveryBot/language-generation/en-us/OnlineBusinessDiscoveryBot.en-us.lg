@@ -6,7 +6,7 @@
 ]
 
 # SendActivity_Greeting_text()
-- Hi, I am your Chief Growth Officer (CGO) at StratformX. Operations Diagnosis is your guide to operational excellence, identifying efficiencies and improvements across all key operational areas.
+- jfsjkbfdjbdkjbdjbjkfjdsk
 # SendActivity_DidNotUnderstand()
 [Activity
     Text = ${SendActivity_DidNotUnderstand_text()}
