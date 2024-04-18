@@ -1,0 +1,361 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "64YVhV",
+    "name": "OperationsManagement",
+    "comment": "This section includes all questions related to operations management"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "phvplq"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "MQGohT"
+          },
+          "activity": "${SendActivity_MQGohT()}"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "coM9cA"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 5,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_coM9cA()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_coM9cA()}",
+          "property": "user.CurrOpProfitMargin",
+          "validations": [
+            "int(this.value) >= -100 && int(this.value) <= 100"
+          ],
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_coM9cA()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "23IV8Q"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_23IV8Q()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.CurrYearProfitability",
+          "choices": [
+            "Profitability has increased",
+            "Profitability has declined",
+            "Profitability has remained unchanged"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "1Y5dYn"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "prompt": "${ChoiceInput_Prompt_1Y5dYn()}",
+          "property": "user.CapacityUtilization",
+          "choices": [
+            "Yes",
+            "No",
+            "Not applicable"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "9HDxKh"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_9HDxKh()}",
+          "choiceOptions": {
+            "includeNumbers": true
+          },
+          "property": "user.CostIncrease",
+          "choices": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "gzxyC6"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_gzxyC6()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.HighDirectCost",
+          "choices": [
+            "High raw material cost or high consumable cost",
+            "High wastages and process inefficiency",
+            "High direct overheads cost ",
+            "High direct employee/ labour cost",
+            "Not Applicable"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "YvLqbZ"
+          },
+          "activity": "${SendActivity_YvLqbZ()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "rNVr8F"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_rNVr8F()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.RejectionRate",
+          "choices": [
+            "Yes, high complaints & rejection",
+            "No, low complaints & rejection",
+            "Yes, medium complaints & rejection"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "KWTSOo"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_KWTSOo()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.OTIFPerformance",
+          "choices": [
+            "Always",
+            "Sometimes",
+            "Never"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "s7Hdtw"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_s7Hdtw()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.PoliciesSOPs",
+          "choices": [
+            "Yes, for all departments",
+            "Yes, for some departments",
+            "No"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "1d6G46"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_1d6G46()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.CustomerAcquisitionCost",
+          "choices": [
+            "Less than competitors",
+            "More than competitors",
+            "At par with competitors"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "lXkHH4"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_lXkHH4()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true
+          },
+          "property": "user.sameSection1",
+          "choices": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "2njjB5"
+          },
+          "condition": "=user.sameSection1==\"Yes\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperties",
+              "$designer": {
+                "id": "RzzwbU"
+              },
+              "properties": [
+                "user.CurrOpProfitMargin",
+                "user.CurrYearProfitability",
+                "user.CapacityUtilization",
+                "user.CostIncrease",
+                "user.HighDirectCost",
+                "user.RejectionRate",
+                "user.OTIFPerformance",
+                "user.PoliciesSOPs",
+                "user.CustomerAcquisitionCost",
+                "user.sameSection1"
+              ]
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "mtquyB"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "ZzcCaz"
+          },
+          "condition": "=user.APIResult3==null",
+          "actions": [
+            {
+              "$kind": "Microsoft.HttpRequest",
+              "$designer": {
+                "id": "9pGCfD"
+              },
+              "method": "PUT",
+              "url": "https://saturn-web.azurewebsites.net/api/app/product/product-form-completion-status/11?userEmail=${turn.activity.from.id}",
+              "resultProperty": "user.APIResult3"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "UQWWfy"
+          },
+          "activityProcessed": true,
+          "dialog": "PeopleManagement"
+        }
+      ]
+    }
+  ],
+  "generator": "OperationsManagement.lg",
+  "recognizer": "OperationsManagement.lu.qna",
+  "id": "OperationsManagement"
+}

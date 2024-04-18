@@ -1,0 +1,518 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "yPOyCs",
+    "name": "DigitalAdoption",
+    "comment": "This section includes questions related to Digital Adoption"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "Q50jwL"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "xGd296"
+          },
+          "activity": "${SendActivity_xGd296()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "7APrq4"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_7APrq4()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Yes",
+            "No, but intend to use in future",
+            "Not interested in using any solutions"
+          ],
+          "property": "user.AnalyticalSolution",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "kK54YU"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_kK54YU()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Yes, I know and we have a plan/ list in place",
+            "Yes, I know but haven't defined/ documented it",
+            "No, I don't know"
+          ],
+          "property": "user.DigitalToolsAwareness",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "8NZjhL"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${ChoiceInput_Prompt_8NZjhL()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Yes, we have advanced/ latest system",
+            "Yes, we have legacy system",
+            "No"
+          ],
+          "style": "suggestedAction",
+          "recognizerOptions": {
+            "recognizeOrdinals": true
+          },
+          "property": "user.TPSystem"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "tx4dyK"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_tx4dyK()}",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ],
+          "property": "user.AdvancedTechnology",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "4A39BY"
+          },
+          "activity": "${SendActivity_4A39BY()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "Ab3B6U"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_Ab3B6U()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Extremely good",
+            "Somewhat good",
+            "Extremely poor"
+          ],
+          "property": "user.OrganizationTimeliness",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "5FDLJy"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_5FDLJy()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Excellent",
+            "Average",
+            "Poor"
+          ],
+          "property": "user.OrganizationUnderstanding",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "QFKwD4"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_QFKwD4()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Yes",
+            "No",
+            "Need to know better"
+          ],
+          "property": "user.CBAnalysis",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "AGkXRv"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_AGkXRv()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "choices": [
+            "Comfortable",
+            "Neutral",
+            "Uncomfortable"
+          ],
+          "property": "user.FirmComfortable",
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "hrqxlb"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 5,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_hrqxlb()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_hrqxlb()}",
+          "prompt": "${NumberInput_Prompt_hrqxlb()}",
+          "property": "user.WorkingCapitalDays",
+          "validations": [
+            "=int(this.value)>=0"
+          ]
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "0GIieT"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 5,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "invalidPrompt": "${NumberInput_InvalidPrompt_0GIieT()}",
+          "prompt": "${NumberInput_Prompt_0GIieT()}",
+          "property": "user.DebttoEquity",
+          "validations": [
+            "int(this.value) >= -1000 && int(this.value) <= 1000"
+          ],
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_0GIieT()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "oTUlzE"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_oTUlzE()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "property": "user.FirmRaiseFunds",
+          "choices": [
+            "Easy",
+            "Neutral",
+            "Difficult"
+          ],
+          "style": "suggestedAction"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "X0Ou38"
+          },
+          "condition": "=user.RaiseFunds==null",
+          "actions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "4aDf3n"
+              },
+              "disabled": false,
+              "maxTurnCount": 1,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "prompt": "${TextInput_Prompt_4aDf3n()}",
+              "property": "dialog.adaptiveCard.raisefunds.value"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "yfzKzW"
+              },
+              "property": "user.RaiseFunds",
+              "value": "${turn.activity.value.questions}, ${turn.activity.value.id_text}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "TXWV0y"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 5,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "invalidPrompt": "${NumberInput_InvalidPrompt_TXWV0y()}",
+          "prompt": "${NumberInput_Prompt_TXWV0y()}",
+          "property": "user.CurrentROCE",
+          "validations": [
+            "int(this.value) >= -1000 && int(this.value) <= 1000"
+          ],
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_TXWV0y()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "UVfmXT"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_UVfmXT()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or "
+          },
+          "property": "user.sameSection3",
+          "choices": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "5kknS8"
+          },
+          "condition": "=user.sameSection3==\"Yes\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.DeleteProperties",
+              "$designer": {
+                "id": "KOl5Vr"
+              },
+              "properties": [
+                "user.AnalyticalSolution",
+                "user.DigitalToolsAwareness",
+                "user.TPSystem",
+                "user.AdvancedTechnology",
+                "user.OrganizationTimeliness",
+                "user.OrganizationUnderstanding",
+                "user.CBAnalysis",
+                "user.FirmComfortable",
+                "user.WorkingCapitalDays",
+                "user.DebttoEquity",
+                "user.FirmRaiseFunds",
+                "user.RaiseFunds",
+                "user.CurrentROCE",
+                "user.sameSection3"
+              ]
+            },
+            {
+              "$kind": "Microsoft.RepeatDialog",
+              "$designer": {
+                "id": "Q5MxxH"
+              },
+              "activityProcessed": true
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "B2p6Pw"
+          },
+          "condition": "=user.APIResult5==null",
+          "actions": [
+            {
+              "$kind": "Microsoft.HttpRequest",
+              "$designer": {
+                "id": "ZnTzTl"
+              },
+              "method": "PUT",
+              "url": "https://saturn-web.azurewebsites.net/api/app/product/product-form-completion-status/11?userEmail=${turn.activity.from.id}",
+              "resultProperty": "user.APIResult5"
+            },
+            {
+              "$kind": "Microsoft.HttpRequest",
+              "$designer": {
+                "id": "WJfZZA"
+              },
+              "method": "POST",
+              "body": [
+                "${turn.activity.from.id}",
+                "${user.CurrOpProfitMargin}",
+                "${user.CurrYearProfitability}",
+                "${user.CapacityUtilization}",
+                "${user.CostIncrease}",
+                "${user.HighDirectCost}",
+                "${user.RejectionRate}",
+                "${user.OTIFPerformance}",
+                "${user.PoliciesSOPs}",
+                "${user.CustomerAcquisitionCost}",
+                "${user.EmployeeSatisfied}",
+                "${user.AttractTalent}",
+                "${user.RetainTalent}",
+                "${user.AttritionRate}",
+                "${user.KRAs}",
+                "${user.HiringProcesses}",
+                "${user.EmployeeProductivity}",
+                "${user.Upskilling}",
+                "${user.holiday}",
+                "${user.AnalyticalSolution}",
+                "${user.DigitalToolsAwareness}",
+                "${user.TPSystem}",
+                "${user.AdvancedTechnology}",
+                "${user.OrganizationTimeliness}",
+                "${user.OrganizationUnderstanding}",
+                "${user.CBAnalysis}",
+                "${user.FirmComfortable}",
+                "${user.WorkingCapitalDays}",
+                "${user.DebttoEquity}",
+                "${user.FirmRaiseFunds}",
+                "${user.RaiseFunds}",
+                "${user.CurrentROCE}"
+              ],
+              "resultProperty": "turn.results",
+              "url": "https://saturn-web.azurewebsites.net/api/app/bot/save-bot-data?productId=11&firstSheetId=7A1E2C2A-F0EC-4A12-B69F-EB9037DC880C&secondSheetId=4A5EF978-0C0A-4619-91AC-A29ED2A60DD5&tableName=OnlineDiagnosis2"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "HPyvgW"
+              },
+              "activity": "${SendActivity_HPyvgW()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "eUgYSk"
+              },
+              "activity": "${SendActivity_eUgYSk()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "DigitalAdoption.lg",
+  "recognizer": "DigitalAdoption.lu.qna",
+  "id": "DigitalAdoption"
+}

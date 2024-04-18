@@ -1,0 +1,133 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_zuDfxX()
+[Activity
+    Text = ${ChoiceInput_Prompt_zuDfxX_text()}
+]
+
+# ChoiceInput_Prompt_zuDfxX_text()
+- How would you describe employee satisfaction and motivation within your company?
+# ChoiceInput_Prompt_THDVaJ()
+[Activity
+    Text = ${ChoiceInput_Prompt_THDVaJ_text()}
+]
+
+# ChoiceInput_Prompt_THDVaJ_text()
+- Are attracting talented individuals proving to be a challenge?
+# ChoiceInput_Prompt_xc8r6a()
+[Activity
+    Text = ${ChoiceInput_Prompt_xc8r6a_text()}
+]
+
+# ChoiceInput_Prompt_xc8r6a_text()
+- Also retaining talented individuals proving to be a challenge for you?
+# NumberInput_Prompt_qQJIdW()
+[Activity
+    Text = ${NumberInput_Prompt_qQJIdW_text()}
+]
+
+# NumberInput_Prompt_qQJIdW_text()
+- What was your attrition rate this fiscal year compared to the last, in percentage?
+# ChoiceInput_Prompt_BYIRmI()
+[Activity
+    Text = ${ChoiceInput_Prompt_BYIRmI_text()}
+]
+
+# ChoiceInput_Prompt_BYIRmI_text()
+- Does each position in your company have clearly defined Key Result Areas and job descriptions?
+# ChoiceInput_Prompt_vqVaH8()
+[Activity
+    Text = ${ChoiceInput_Prompt_vqVaH8_text()}
+]
+
+# ChoiceInput_Prompt_vqVaH8_text()
+- Do you have processes in place for hiring, training, evaluating, and compensating your team?
+# ChoiceInput_Prompt_x7OlmL()
+[Activity
+    Text = ${ChoiceInput_Prompt_x7OlmL_text()}
+]
+
+# ChoiceInput_Prompt_x7OlmL_text()
+- How satisfied are you with your employees' quality and productivity?
+# ChoiceInput_Prompt_IPcHPy()
+[Activity
+    Text = ${ChoiceInput_Prompt_IPcHPy_text()}
+]
+
+# ChoiceInput_Prompt_IPcHPy_text()
+- Is your workforce actively upskilling to remain productive and high-performing in the future?
+# NumberInput_InvalidPrompt_qQJIdW()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_qQJIdW_text()}
+]
+
+# NumberInput_InvalidPrompt_qQJIdW_text()
+- Please enter attrition rate percentage in number format between 0 to 100.
+# NumberInput_UnrecognizedPrompt_qQJIdW()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_qQJIdW_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_qQJIdW_text()
+- Please enter number value
+# ChoiceInput_Prompt_pVriiI()
+[Activity
+    Text = ${ChoiceInput_Prompt_pVriiI_text()}
+]
+
+# ChoiceInput_Prompt_pVriiI_text()
+- Could you take a 3-month break without negatively impacting your company's performance?
+# SendActivity_x3BIyW()
+[Activity
+    Attachments = ${json(SendActivity_x3BIyW_attachment_ubI4d1())}
+]
+
+# SendActivity_x3BIyW_attachment_ubI4d1()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Talent Management Insights",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# ChoiceInput_Prompt_aeSCXe_text()
+- Do you want to fill all the details again if you have encountered some issue while filling the details?
+# ChoiceInput_Prompt_aeSCXe()
+[Activity
+    Text = ${ChoiceInput_Prompt_aeSCXe_text()}
+]
+
+# SendActivity_lRRybq_attachment_ubI4d1()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Operational Efficiency and Future Readiness",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# SendActivity_lRRybq()
+[Activity
+    Attachments = ${json(SendActivity_lRRybq_attachment_ubI4d1())}
+]

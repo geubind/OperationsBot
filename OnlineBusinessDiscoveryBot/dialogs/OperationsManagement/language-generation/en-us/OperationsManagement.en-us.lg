@@ -1,0 +1,133 @@
+[import](common.lg)
+
+# NumberInput_Prompt_coM9cA()
+[Activity
+    Text = ${NumberInput_Prompt_coM9cA_text()}
+]
+
+# NumberInput_Prompt_coM9cA_text()
+- What's your current operating profit margin for FY24? Please share the value in percentage.
+# ChoiceInput_Prompt_23IV8Q()
+[Activity
+    Text = ${ChoiceInput_Prompt_23IV8Q_text()}
+]
+
+# ChoiceInput_Prompt_23IV8Q_text()
+- Has your profitability increased this year compared to the previous one?
+# ChoiceInput_Prompt_1Y5dYn()
+[Activity
+    Text = ${ChoiceInput_Prompt_1Y5dYn_text()}
+]
+
+# ChoiceInput_Prompt_1Y5dYn_text()
+- Do you monitor how efficiently you're using your plant and assets, or, if you're in services, the utilization of your people and resources?
+# ChoiceInput_Prompt_gzxyC6()
+[Activity
+    Text = ${ChoiceInput_Prompt_gzxyC6_text()}
+]
+
+# ChoiceInput_Prompt_gzxyC6_text()
+- What's driving your high direct costs? We'd love to understand the main factors.
+# ChoiceInput_Prompt_rNVr8F()
+[Activity
+    Text = ${ChoiceInput_Prompt_rNVr8F_text()}
+]
+
+# ChoiceInput_Prompt_rNVr8F_text()
+- Have high rejection rates, customer complaints, or returns been a problem for you?
+# ChoiceInput_Prompt_KWTSOo()
+[Activity
+    Text = ${ChoiceInput_Prompt_KWTSOo_text()}
+]
+
+# ChoiceInput_Prompt_KWTSOo_text()
+- How's your on-time and in-full (OTIF) delivery performance? Facing any challenges?
+# ChoiceInput_Prompt_s7Hdtw()
+[Activity
+    Text = ${ChoiceInput_Prompt_s7Hdtw_text()}
+]
+
+# ChoiceInput_Prompt_s7Hdtw_text()
+- Have you established policies and standard operating procedures for crucial functions like operations, supply chain, and customer service?
+# ChoiceInput_Prompt_1d6G46()
+[Activity
+    Text = ${ChoiceInput_Prompt_1d6G46_text()}
+]
+
+# ChoiceInput_Prompt_1d6G46_text()
+- What's the current cost of acquiring a customer for your business?
+# NumberInput_InvalidPrompt_coM9cA()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_coM9cA_text()}
+]
+
+# NumberInput_InvalidPrompt_coM9cA_text()
+- Please enter operating profit margin percentage in number format up to 2 digits.
+# NumberInput_UnrecognizedPrompt_coM9cA()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_coM9cA_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_coM9cA_text()
+- Please enter number value
+# ChoiceInput_Prompt_9HDxKh()
+[Activity
+    Text = ${ChoiceInput_Prompt_9HDxKh_text()}
+]
+
+# ChoiceInput_Prompt_9HDxKh_text()
+- Are you noticing any uncontrollable rise in costs, including materials, employee salaries, or other expenses?
+# SendActivity_MQGohT()
+[Activity
+    Attachments = ${json(SendActivity_MQGohT_attachment_3kDlbX())}
+]
+
+# SendActivity_MQGohT_attachment_3kDlbX()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Understanding Your Operations Health",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# ChoiceInput_Prompt_lXkHH4()
+[Activity
+    Text = ${ChoiceInput_Prompt_lXkHH4_text()}
+]
+
+# ChoiceInput_Prompt_lXkHH4_text()
+- Do you want to fill all the details again if you have encountered some issue while filling the details?
+# SendActivity_YvLqbZ_attachment_3kDlbX()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Assessing Operational Challenges",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# SendActivity_YvLqbZ()
+[Activity
+    Attachments = ${json(SendActivity_YvLqbZ_attachment_3kDlbX())}
+]

@@ -1,0 +1,305 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_7APrq4()
+[Activity
+    Text = ${ChoiceInput_Prompt_7APrq4_text()}
+]
+
+# ChoiceInput_Prompt_7APrq4_text()
+- Are you utilizing analytical or digital solutions to oversee and report on business performance?
+# ChoiceInput_Prompt_kK54YU()
+[Activity
+    Text = ${ChoiceInput_Prompt_kK54YU_text()}
+]
+
+# ChoiceInput_Prompt_kK54YU_text()
+- How familiar are you with digital tools and systems that could enhance your business's efficiency and future readiness?
+# ChoiceInput_Prompt_8NZjhL()
+[Activity
+    Text = ${ChoiceInput_Prompt_8NZjhL_text()}
+]
+
+# ChoiceInput_Prompt_8NZjhL_text()
+- Do you currently use a Transaction Processing System or ERP?
+# ChoiceInput_Prompt_tx4dyK()
+[Activity
+    Text = ${ChoiceInput_Prompt_tx4dyK_text()}
+]
+
+# ChoiceInput_Prompt_tx4dyK_text()
+- Are you considering investing in advanced technologies like ERP, digital marketing, AI, Industry 4.0 technologies, CRM, or data analytics?
+# ChoiceInput_Prompt_Ab3B6U_text()
+- How would you rate the quality, accuracy, and timeliness of your financial reporting and forecasting?
+# ChoiceInput_Prompt_Ab3B6U()
+[Activity
+    Text = ${ChoiceInput_Prompt_Ab3B6U_text()}
+]
+
+# ChoiceInput_Prompt_5FDLJy_text()
+- How well does your organization understand its expenditure and cost drivers, especially regarding profitability?
+# ChoiceInput_Prompt_5FDLJy()
+[Activity
+    Text = ${ChoiceInput_Prompt_5FDLJy_text()}
+]
+
+# ChoiceInput_Prompt_QFKwD4_text()
+- Do you conduct cost-benefit analyses for investments, projects, or processes?
+# ChoiceInput_Prompt_QFKwD4()
+[Activity
+    Text = ${ChoiceInput_Prompt_QFKwD4_text()}
+]
+
+# ChoiceInput_Prompt_AGkXRv_text()
+- How prepared is your company to meet its short-term obligations and current liabilities?
+# ChoiceInput_Prompt_AGkXRv()
+[Activity
+    Text = ${ChoiceInput_Prompt_AGkXRv_text()}
+]
+
+# NumberInput_Prompt_hrqxlb_text()
+- What's your working capital cycle for this fiscal year?
+# NumberInput_Prompt_hrqxlb()
+[Activity
+    Text = ${NumberInput_Prompt_hrqxlb_text()}
+]
+
+# NumberInput_InvalidPrompt_hrqxlb_text()
+- Please enter positive working capital cycle days.
+# NumberInput_InvalidPrompt_hrqxlb()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_hrqxlb_text()}
+]
+
+# NumberInput_Prompt_0GIieT_text()
+- What is your Debt to Equity Ratio for the current financial year?
+# NumberInput_Prompt_0GIieT()
+[Activity
+    Text = ${NumberInput_Prompt_0GIieT_text()}
+]
+
+# NumberInput_InvalidPrompt_0GIieT_text()
+- Please enter Debt to Equity ratio percentage in number format upto 3 digits
+# NumberInput_InvalidPrompt_0GIieT()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_0GIieT_text()}
+]
+
+# ChoiceInput_Prompt_oTUlzE_text()
+- How easy or difficult is it for your firm to raise funds?
+# ChoiceInput_Prompt_oTUlzE()
+[Activity
+    Text = ${ChoiceInput_Prompt_oTUlzE_text()}
+]
+
+# TextInput_Prompt_4aDf3n_attachment_QIHJVY()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+
+- ```{
+
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+
+  "version": "1.2",
+
+  "type": "AdaptiveCard",
+
+  "body": [
+
+    {
+
+      "type": "Input.ChoiceSet",
+
+      "id": "questions",
+
+      "isMultiSelect": true,
+
+      "value": "abc",
+
+      "style": "expanded",
+
+      "label": "What strategies do you have in place to raise funds?",
+
+      "choices": [
+
+        {
+
+          "title": "Debt",
+
+          "value": "Debt"
+
+        },
+
+        {
+
+          "title": "Equity",
+
+          "value": "Equity"
+
+        },
+
+        {
+
+          "title": "Grants",
+
+          "value": "Grants"
+
+        },
+
+        {
+
+          "title": "Other financial instrument",
+
+          "value": "Other financial instrument"
+
+        }
+
+      ]
+
+    },
+
+     {
+
+      "type": "Input.Text",
+
+      "label": "Others",
+
+      "id": "id_text"
+
+    },
+
+  ],
+
+  "actions": [
+
+      {
+
+        "type": "Action.Submit",
+
+        "title": "OK",
+
+        "data": {
+
+        "selectedChannels": "${raisefunds.value}",
+
+        "others": "${id_text.value}"
+
+      }        
+
+    }
+
+  ]
+
+}
+]
+
+}```
+# TextInput_Prompt_4aDf3n()
+[Activity
+    Attachments = ${json(TextInput_Prompt_4aDf3n_attachment_QIHJVY())}
+]
+
+# NumberInput_Prompt_TXWV0y_text()
+- What is your Return on Capital Employed (ROCE) for the current financial year?
+# NumberInput_Prompt_TXWV0y()
+[Activity
+    Text = ${NumberInput_Prompt_TXWV0y_text()}
+]
+
+# NumberInput_InvalidPrompt_TXWV0y_text()
+- Please enter current ROCE percentage in number format upto 3 digits.
+# NumberInput_InvalidPrompt_TXWV0y()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_TXWV0y_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_hrqxlb()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_hrqxlb_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_hrqxlb_text()
+- Please enter number value
+# NumberInput_UnrecognizedPrompt_0GIieT()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_0GIieT_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_0GIieT_text()
+- Please enter number value
+# NumberInput_UnrecognizedPrompt_TXWV0y()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_TXWV0y_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_TXWV0y_text()
+- Please enter number value
+# SendActivity_xGd296()
+[Activity
+    Attachments = ${json(SendActivity_xGd296_attachment_QHYXKM())}
+]
+
+# SendActivity_xGd296_attachment_QHYXKM()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Leveraging Technology for Business Performance",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# ChoiceInput_Prompt_UVfmXT_text()
+- Do you want to fill all the details again if you have encountered some issue while filling the details?
+# ChoiceInput_Prompt_UVfmXT()
+[Activity
+    Text = ${ChoiceInput_Prompt_UVfmXT_text()}
+]
+
+# SendActivity_HPyvgW_text()
+- Operations Diagnosis is concluded. We are analyzing your responses and will inform you once your report is ready. Let's optimize your operations for peak efficiency!
+# SendActivity_HPyvgW()
+[Activity
+    Text = ${SendActivity_HPyvgW_text()}
+]
+
+# SendActivity_eUgYSk()
+[Activity
+    Text = ${SendActivity_eUgYSk_text()}
+]
+
+# SendActivity_eUgYSk_text()
+- Please try again after sometime.
+# SendActivity_4A39BY_attachment_QHYXKM()
+> To learn more about the LG file format, read the documentation at
+> https://aka.ms/lg-file-format> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Financial Strategy and Performance",
+      "weight": "bolder",
+      "size": "medium",
+      "color": "dark",
+      "isSubtle": false
+    }
+  ]
+}```
+# SendActivity_4A39BY()
+[Activity
+    Attachments = ${json(SendActivity_4A39BY_attachment_QHYXKM())}
+]
